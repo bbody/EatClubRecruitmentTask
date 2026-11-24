@@ -55,3 +55,4 @@ curl "http://localhost:8080/peak_times"
 
 - I did not handle peaks going over midnight e.g. 10PM-1AM
 - Not an efficient implementation O(n) calculation
+- A peak is the period with the highest number of deals, rather than some heuristic to figure out what is the peak time e.g. 12-1 might have the most deals but 11-2 min is only 5 less than 12-1, so the whole period would be a better representation of a peak, in the same way that peak hour traffic is gradual but the actual peak may only be around 8:30-8:45AM

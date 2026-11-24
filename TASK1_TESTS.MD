@@ -1,7 +1,8 @@
 # Test Cases
 
 ## timeOfDay = 3:00pm
-curl "http://localhost:8080/deals?timeOfDay=3:00pm"
+
+`curl "http://localhost:8080/deals?timeOfDay=3:00pm"`
 
 ```json
 [
@@ -87,7 +88,8 @@ curl "http://localhost:8080/deals?timeOfDay=3:00pm"
 ```
 
 ## timeOfDay = 6:00pm
-curl "http://localhost:8080/deals?timeOfDay=6:00pm"
+
+`curl "http://localhost:8080/deals?timeOfDay=6:00pm"`
 
 ```json
 [
@@ -212,7 +214,8 @@ curl "http://localhost:8080/deals?timeOfDay=6:00pm"
 ```
 
 ## timeOfDay = 9:00pm
-curl "http://localhost:8080/deals?timeOfDay=9:00pm"
+
+`curl "http://localhost:8080/deals?timeOfDay=9:00pm"`
 
 ```json
 [
