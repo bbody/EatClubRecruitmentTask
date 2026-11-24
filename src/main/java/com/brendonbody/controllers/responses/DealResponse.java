@@ -1,5 +1,6 @@
 package com.brendonbody.controllers.responses;
 
+import com.brendonbody.domain.Deal;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalTime;
@@ -36,7 +37,7 @@ public record DealResponse(
         @JsonFormat(shape = JsonFormat.Shape.STRING)
         int qtyLeft
 ){
-    public static DealResponse fromDomain(com.brendonbody.domain.Deal domainDeal) {
+    public static DealResponse fromDomain(Deal domainDeal) {
         return new DealResponse(
                 domainDeal.restaurantObjectId(),
                 domainDeal.restaurantName(),

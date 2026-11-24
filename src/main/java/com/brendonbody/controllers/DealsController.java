@@ -24,6 +24,6 @@ public class DealsController {
             @RequestParam(required = false)
             LocalTime timeOfDay
     ) {
-        return this.dealsService.getDeals(timeOfDay).stream().map(DealResponse::fromDomain).toList();
+        return dealsService.getDeals(timeOfDay).stream().map(DealResponse::fromDomain).toList();
     }
 }

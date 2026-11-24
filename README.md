@@ -35,3 +35,23 @@ curl "http://localhost:8080/deals"
 
 - The spec for the response wants things as strings, like the [provided API](https://eccdn.com.au/misc/challengedata.json), internally I represented as strong types
 - Some deals had open and close on it (I presumed for lunc/dinner specials), the field on the output is called *restaurantOpen* and *restaurantClose*, so I ignored the deal time.
+
+## Task2
+
+```bash
+curl "http://localhost:8080/peak_times"
+```
+
+### Output
+
+```json
+{
+  "peakTimeStart": "6:00PM",
+  "peakTimeEnd": "9:00PM"
+}
+```
+
+### Assumptions
+
+- I did not handle peaks going over midnight e.g. 10PM-1AM
+- 
